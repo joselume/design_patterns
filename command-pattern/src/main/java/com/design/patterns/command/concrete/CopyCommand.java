@@ -15,6 +15,7 @@ public class CopyCommand extends Command {
     // does not change editor's state.
 	@Override
 	public boolean execute() {
+		System.out.println("CopyCommand.execute()");
 		app.setClipboard(editor.getSelection());
 		return false;
 	}

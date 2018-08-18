@@ -12,6 +12,7 @@ public class CutCommand extends Command {
 
 	@Override
 	public boolean execute() {
+		System.out.println("CutCommand.execute()");
 		saveBackup();
 		app.setClipboard(editor.getSelection());
 		editor.deleteSelection();

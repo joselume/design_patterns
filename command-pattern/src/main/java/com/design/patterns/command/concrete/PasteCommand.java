@@ -12,6 +12,7 @@ public class PasteCommand extends Command {
 
 	@Override
 	public boolean execute() {
+		System.out.println("PasteCommand.execute()");
 		saveBackup();
 		editor.replaceSelection(app.getClipboard());
 		

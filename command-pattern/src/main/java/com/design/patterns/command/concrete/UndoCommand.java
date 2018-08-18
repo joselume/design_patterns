@@ -12,6 +12,7 @@ public class UndoCommand extends Command {
 
 	@Override
 	public boolean execute() {
+		System.out.println("UndoCommand.execute()");
 		app.undo();
 		
 		return false;
